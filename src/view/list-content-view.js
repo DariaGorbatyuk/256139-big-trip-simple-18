@@ -3,7 +3,7 @@ import {createElement} from "../render";
 const createListContentTemplate = () => `   <ul class="trip-events__list"></ul>`
 
 
-export default class ListContent {
+export default class ListContentView {
   getTemplate() {
     return createListContentTemplate()
   }

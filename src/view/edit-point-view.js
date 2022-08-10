@@ -154,7 +154,7 @@ const createEditPointTemplate = () => `  <li class="trip-events__item"> <form cl
                 </section>
               </form></li>`
 
-export default class EditPoint {
+export default class EditPointView {
   getTemplate() {
     return createEditPointTemplate()
   }

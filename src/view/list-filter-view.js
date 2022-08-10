@@ -14,7 +14,7 @@ const createListFilterTemplate = () => `<form class="trip-filters" action="#" me
                 <button class="visually-hidden" type="submit">Accept filter</button>
               </form>`
 
-export default class ListFilter {
+export default class ListFilterView {
   getTemplate() {
     return createListFilterTemplate()
   }

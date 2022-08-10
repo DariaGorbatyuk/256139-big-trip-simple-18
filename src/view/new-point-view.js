@@ -161,7 +161,7 @@ const createNewPointTemplate = () => `   <li class="trip-events__item"> <form cl
                 </section>
               </form></li>`
 
-export default class NewPoint {
+export default class NewPointView {
   getTemplate() {
     return createNewPointTemplate()
   }

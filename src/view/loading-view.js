@@ -1,9 +1,10 @@
 import {createElement} from "../render";
 
-const createListEmptyTemplate = () => `<p class="trip-events__msg">Click New Event to create your first point</p>`
-export default class ListEmpty {
+const createLoadingTemplate = () => ` <p class="trip-events__msg">Loading...</p>`
+
+export default class LoadingView {
   getTemplate() {
-    return createListEmptyTemplate()
+    return createLoadingTemplate()
   }
 
   getElement() {

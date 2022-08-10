@@ -30,7 +30,7 @@ const createPointTemplate = () => `        <li class="trip-events__item">
                 </button>
               </div>
             </li>`
-export default class Point {
+export default class PointView {
   getTemplate() {
     return createPointTemplate()
   }
