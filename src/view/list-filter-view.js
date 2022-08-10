@@ -1,4 +1,4 @@
-import {createElement} from "../render";
+import {createElement} from '../render';
 
 const createListFilterTemplate = () => `<form class="trip-filters" action="#" method="get">
                 <div class="trip-filters__filter">
@@ -12,21 +12,21 @@ const createListFilterTemplate = () => `<form class="trip-filters" action="#" me
                 </div>
 
                 <button class="visually-hidden" type="submit">Accept filter</button>
-              </form>`
+              </form>`;
 
 export default class ListFilterView {
   getTemplate() {
-    return createListFilterTemplate()
+    return createListFilterTemplate();
   }
 
   getElement() {
     if (!this.element) {
-      this.element = createElement(this.getTemplate())
+      this.element = createElement(this.getTemplate());
     }
-    return this.element
+    return this.element;
   }
 
   removeElement() {
-    this.element = null
+    this.element = null;
   }
 }

@@ -1,4 +1,4 @@
-import {createElement} from "../render";
+import {createElement} from '../render';
 
 const createEditPointTemplate = () => `  <li class="trip-events__item"> <form class="event event--edit" action="#" method="post">
                 <header class="event__header">
@@ -152,21 +152,21 @@ const createEditPointTemplate = () => `  <li class="trip-events__item"> <form cl
                     <p class="event__destination-description">Chamonix-Mont-Blanc (usually shortened to Chamonix) is a resort area near the junction of France, Switzerland and Italy. At the base of Mont Blanc, the highest summit in the Alps, it's renowned for its skiing.</p>
                   </section>
                 </section>
-              </form></li>`
+              </form></li>`;
 
 export default class EditPointView {
   getTemplate() {
-    return createEditPointTemplate()
+    return createEditPointTemplate();
   }
 
   getElement() {
     if (!this.element) {
-      this.element = createElement(this.getTemplate())
+      this.element = createElement(this.getTemplate());
     }
-    return this.element
+    return this.element;
   }
 
   removeElement() {
-    this.element = null
+    this.element = null;
   }
 }

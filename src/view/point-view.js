@@ -1,4 +1,4 @@
-import {createElement} from "../render";
+import {createElement} from '../render';
 
 const createPointTemplate = () => `        <li class="trip-events__item">
               <div class="event">
@@ -29,20 +29,20 @@ const createPointTemplate = () => `        <li class="trip-events__item">
                   <span class="visually-hidden">Open event</span>
                 </button>
               </div>
-            </li>`
+            </li>`;
 export default class PointView {
   getTemplate() {
-    return createPointTemplate()
+    return createPointTemplate();
   }
 
   getElement() {
     if (!this.element) {
-      this.element = createElement(this.getTemplate())
+      this.element = createElement(this.getTemplate());
     }
-    return this.element
+    return this.element;
   }
 
   removeElement() {
-    this.element = null
+    this.element = null;
   }
 }

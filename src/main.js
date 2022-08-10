@@ -1,3 +1,3 @@
-import BoardPresenter from "./presenter/board-presenter";
+import BoardPresenter from './presenter/board-presenter';
 
-new BoardPresenter().init()
+new BoardPresenter().init();

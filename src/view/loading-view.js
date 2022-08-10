@@ -1,20 +1,20 @@
-import {createElement} from "../render";
+import {createElement} from '../render';
 
-const createLoadingTemplate = () => ` <p class="trip-events__msg">Loading...</p>`
+const createLoadingTemplate = () => ' <p class="trip-events__msg">Loading...</p>';
 
 export default class LoadingView {
   getTemplate() {
-    return createLoadingTemplate()
+    return createLoadingTemplate();
   }
 
   getElement() {
     if (!this.element) {
-      this.element = createElement(this.getTemplate())
+      this.element = createElement(this.getTemplate());
     }
-    return this.element
+    return this.element;
   }
 
   removeElement() {
-    this.element = null
+    this.element = null;
   }
 }

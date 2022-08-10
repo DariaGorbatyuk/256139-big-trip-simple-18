@@ -1,21 +1,21 @@
-import {createElement} from "../render";
+import {createElement} from '../render';
 
-const createListContentTemplate = () => `   <ul class="trip-events__list"></ul>`
+const createListContentTemplate = () => '   <ul class="trip-events__list"></ul>';
 
 
 export default class ListContentView {
   getTemplate() {
-    return createListContentTemplate()
+    return createListContentTemplate();
   }
 
   getElement() {
     if (!this.element) {
-      this.element = createElement(this.getTemplate())
+      this.element = createElement(this.getTemplate());
     }
-    return this.element
+    return this.element;
   }
 
   removeElement() {
-    this.element = null
+    this.element = null;
   }
 }

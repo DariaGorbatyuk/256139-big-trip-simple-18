@@ -1,19 +1,19 @@
-import {createElement} from "../render";
+import {createElement} from '../render';
 
-const createListEmptyTemplate = () => `<p class="trip-events__msg">Click New Event to create your first point</p>`
+const createListEmptyTemplate = () => '<p class="trip-events__msg">Click New Event to create your first point</p>';
 export default class ListEmptyView {
   getTemplate() {
-    return createListEmptyTemplate()
+    return createListEmptyTemplate();
   }
 
   getElement() {
     if (!this.element) {
-      this.element = createElement(this.getTemplate())
+      this.element = createElement(this.getTemplate());
     }
-    return this.element
+    return this.element;
   }
 
   removeElement() {
-    this.element = null
+    this.element = null;
   }
 }
